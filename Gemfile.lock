@@ -43,24 +43,6 @@ GIT
       rack (~> 2.0)
 
 GIT
-  remote: https://github.com/hanami/hanami
-  revision: ca4ad8d8337523f87fb38124241ff4f53d1d303b
-  branch: default-settings-for-component-dirs
-  specs:
-    hanami (2.0.0.alpha1)
-      bundler (>= 1.16, < 3)
-      dry-cli (~> 0.6)
-      dry-core (~> 0.4)
-      dry-inflector (~> 0.1, >= 0.1.2)
-      dry-monitor
-      dry-system (~> 0.18, >= 0.18.0)
-      hanami-cli (~> 2.0.alpha)
-      hanami-controller (~> 2.0.alpha)
-      hanami-router (~> 2.0.alpha)
-      hanami-utils (~> 2.0.alpha)
-      hanami-view (~> 2.0.alpha)
-
-GIT
   remote: https://github.com/hanami/router
   revision: 7d70f09f9c256c1093d008c561c2f53fc3f61d7f
   branch: unstable
@@ -91,6 +73,24 @@ GIT
       dry-equalizer (~> 0.2)
       dry-inflector (~> 0.1)
       tilt (~> 2.0, >= 2.0.6)
+
+GIT
+  remote: https://github.com/solnic/hanami
+  revision: 290cec1c62b0cdb2f1f284a2b5ba5d4404c45343
+  branch: new-system-and-cli
+  specs:
+    hanami (2.0.0.alpha1)
+      bundler (>= 1.16, < 3)
+      dry-cli (~> 0.6)
+      dry-core (~> 0.4)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-monitor
+      dry-system (~> 0.18, >= 0.18.0)
+      hanami-cli (~> 2.0.alpha)
+      hanami-controller (~> 2.0.alpha)
+      hanami-router (~> 2.0.alpha)
+      hanami-utils (~> 2.0.alpha)
+      hanami-view (~> 2.0.alpha)
 
 GEM
   remote: https://rubygems.org/
