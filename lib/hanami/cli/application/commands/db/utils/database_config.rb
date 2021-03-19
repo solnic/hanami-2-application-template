@@ -1,7 +1,7 @@
 require "uri"
 
 module Hanami
-  class CLI
+  module CLI
     module Application
       module Commands
         module DB

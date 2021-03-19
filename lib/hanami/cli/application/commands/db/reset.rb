@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require "hanami/cli/application/command"
+require "hanami/cli/command"
 require_relative "create"
 require_relative "drop"
 require_relative "migrate"
 
 module Hanami
-  class CLI
+  module CLI
     module Application
       module Commands
         module DB
@@ -20,9 +20,9 @@ module Hanami
             end
           end
         end
-
-        register "db reset", Commands::DB::Reset
       end
     end
+
+    register "db reset", Application::Commands::DB::Reset
   end
 end

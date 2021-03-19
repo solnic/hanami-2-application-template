@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require "hanami/cli/application/command"
+require "hanami/cli/command"
 require_relative "structure/dump"
 require_relative "utils/database"
 
 module Hanami
-  class CLI
+  module CLI
     module Application
       module Commands
         module DB
@@ -41,10 +41,10 @@ module Hanami
             end
           end
         end
-
-        register "db migrate", DB::Migrate
       end
     end
+
+    register "db migrate", Application::Commands::DB::Migrate
   end
 end
 

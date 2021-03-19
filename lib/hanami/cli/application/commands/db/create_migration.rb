@@ -1,9 +1,9 @@
-require "hanami/cli/application/command"
+require "hanami/cli/command"
 require_relative "structure/dump"
 require_relative "utils/database"
 
 module Hanami
-  class CLI
+  module CLI
     module Application
       module Commands
         module DB
@@ -28,9 +28,9 @@ module Hanami
             end
           end
         end
-
-        register "db create_migration", DB::CreateMigration
       end
     end
+
+    register "db create_migration", Application::Commands::DB::CreateMigration
   end
 end

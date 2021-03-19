@@ -1,9 +1,9 @@
-require "hanami/cli/application/command"
+require "hanami/cli/command"
 require "shellwords"
 require_relative "utils/database_config"
 
 module Hanami
-  class CLI
+  module CLI
     module Application
       module Commands
         module DB
@@ -24,9 +24,9 @@ module Hanami
             end
           end
         end
-
-        register "db create", DB::Create
       end
     end
+
+    register "db create", Application::Commands::DB::Create
   end
 end

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Hanami
-  class CLI
+  module CLI
     module Application
       module Commands
         module DB

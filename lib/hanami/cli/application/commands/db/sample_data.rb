@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require "hanami/cli/application/command"
+require "hanami/cli/command"
 require_relative "structure/dump"
 
 module Hanami
-  class CLI
+  module CLI
     module Application
       module Commands
         module DB
@@ -33,9 +33,9 @@ module Hanami
             end
           end
         end
-
-        register "db sample_data", DB::SampleData
       end
     end
+
+    register "db sample_data", Application::Commands::DB::SampleData
   end
 end

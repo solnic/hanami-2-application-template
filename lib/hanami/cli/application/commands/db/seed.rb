@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require "hanami/cli/application/command"
+require "hanami/cli/command"
 
 module Hanami
-  class CLI
+  module CLI
     module Application
       module Commands
         module DB
@@ -31,9 +31,9 @@ module Hanami
             end
           end
         end
-
-        register "db seed", DB::Seed
       end
     end
+
+    register "db seed", Application::Commands::DB::Seed
   end
 end
