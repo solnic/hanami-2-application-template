@@ -8,11 +8,15 @@ ruby "2.7.2"
 
 # Application framework
 gem "down", "~> 5.1"
-gem "hanami", github: "hanami/hanami", branch: "unstable"
+gem "dry-system", git: "https://github.com/dry-rb/dry-system.git", branch: "default-settings-for-component-dirs"
+gem "dry-configurable", git: "https://github.com/dry-rb/dry-configurable.git", branch: "master"
+gem "hanami", github: "hanami/hanami", branch: "default-settings-for-component-dirs"
 gem "hanami-controller", github: "hanami/controller", branch: "unstable"
 gem "hanami-router", github: "hanami/router", branch: "unstable"
 gem "hanami-utils", github: "hanami/utils", branch: "unstable"
 gem "hanami-view", github: "hanami/view", branch: "master"
+gem "hanami-cli", github: "hanami/cli", branch: "main"
+
 gem "puma", "~> 4.0"
 gem "rake", "~> 13.0"
 
